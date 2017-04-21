@@ -72,10 +72,9 @@ Put requests for packages you require in the `common-build-dependencies` module 
 
 This list is sorted by priority.
 
- * `texinfo`
-   * build-requires plenty of perl packages which are not available yet
+ * `xapian-core`
    * dependency of:
-     * `libtool`
+     * `doxygen`
 
  * `libtool`
    * dependency of:
@@ -91,6 +90,9 @@ This list is sorted by priority.
    * dependency of:
      * `dhcp-server`
      * `libevent`
+
+ * `texinfo`
+   * build-requires plenty of perl packages which are not available yet
 
  * `scons`
    * dependency of:
