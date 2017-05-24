@@ -45,6 +45,19 @@ description provided which explains the deviation, example:
  * `hostname`
  * `help2man`
  * `multilib-rpm-config`
+ * `bison`
+ * `libtool`
+ * `cmake`
+ * `doxygen`
+ * `xapian-core`
+ * `xorg-x11-util-macros`
+ * `imake`
+ * `autoconf`
+ * `automake`
+ * `texinfo`
+ * `perl-Text-Unidecode`
+ * `go-compilers`
+
 
 
 ### common-build-dependencies-bootstrap
@@ -72,27 +85,6 @@ Put requests for packages you require in the `common-build-dependencies` module 
 
 This list is sorted by priority.
 
- * `xapian-core`
-   * dependency of:
-     * `doxygen`
-
- * `libtool`
-   * dependency of:
-     * `automake` (test suite)
-     * `php`
-
- * `cmake`
-   * dependency of:
-     * `ruby`
-     * `docker`
-
- * `doxygen`
-   * dependency of:
-     * `dhcp-server`
-     * `libevent`
-
- * `texinfo`
-   * build-requires plenty of perl packages which are not available yet
 
  * `scons`
    * dependency of:
@@ -139,6 +131,27 @@ dependency tree.
    * dependency of:
      * `docker`
 
+ * `xapian-core`
+   * dependency of:
+     * `doxygen`
+
+ * `libtool`
+   * dependency of:
+     * `automake` (test suite)
+     * `php`
+
+ * `cmake`
+   * dependency of:
+     * `ruby`
+     * `docker`
+
+ * `doxygen`
+   * dependency of:
+     * `dhcp-server`
+     * `libevent`
+
+ * `texinfo`
+   * build-requires plenty of perl packages which are not available yet
 
 ## Unknown
 
@@ -220,15 +233,15 @@ module and should be placed elsewhere.
      * `nodejs`
      * `php`
  * `snappy`
-   * part of shared-userspace
+   * should be part of shared-userspace
    * dependency of:
      * `mongodb`
  * `gperftools`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `mongodb`
  * `libstemmer`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `mongodb`
  * `yaml-cpp`
@@ -249,17 +262,17 @@ module and should be placed elsewhere.
    * dependency of:
      * `python2`
  * `libX11`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `python2`
      * `python3`
  * `mesa`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `python2`
      * `python3`
  * `valgrind`
-   * should be part of debug tools or C runtime
+   * part of shared-userspace
    * dependency of:
      * `python2`
  * `tcl, tix, tk`
@@ -268,7 +281,7 @@ module and should be placed elsewhere.
      * `python2`
      * `python3`
  * `compat-openssl10`
-   * should be part of debug tools or C runtime
+   * part of shared-userspace
    * dependency of:
      * `mariadb`
      * `python2`
@@ -282,16 +295,16 @@ module and should be placed elsewhere.
    * dependency of:
      * `python3`
  * `systemtap`
-   * should be part of debug tools or this module
+   * part of shared-userspace
    * dependency of:
      * `python3`
      * `ruby`
  * `libuv`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `nodejs`
  * `docbook-style-xsl`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `bind`
  * `GeoIP`
@@ -360,11 +373,11 @@ module and should be placed elsewhere.
    * dependency of:
      * `php`
  * `libxml2`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `php`
  * `libxslt`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `php`
  * `nginx`
@@ -405,7 +418,7 @@ module and should be placed elsewhere.
    * dependency of:
      * `docker`
  * `git`
-   * should be part of shared-userspace
+   * part of shared-userspace
    * dependency of:
      * `docker`
  * `godep`
